@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript Basic</title>
+    <!--STYLES-->
+    <link rel="stylesheet" href="css/main.css" />
+    <!--GOOGLE FONTS-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    
+    <!--EXERCICI 3-->
+    <script>
+      function exercici3() {
+        var nom = "Albert ";
+        var cognom = "Alcántara";
+        alert(nom + cognom);
+      }
+    </script>
+
+    <!--EXERCICI 4-->
+    <script>
+      function exercici4() {
+        var sum = 34 + 1256;
+        alert("La suma de 34 i 1256 és " + sum);
+      }
+    </script>
+
+    <!--EXERCICI 5-->
+    <script>
+      function exercici5(nota_examen) {
+        var nota_examen = 7;
+        if (nota_examen >= 5) {
+          alert("Felcidades, aprovaste el examen con un " + nota_examen);
+        } else {
+          alert(
+            "Tendrás que trabajar más duro, suspendiste el examen con un " +
+              nota_examen
+          );
+        }
+      }
+    </script>
+
+    <!--EXERCICI 6-->
+    <script>
+      function exercici6() {
+        var frase = "Tinc un cotxe de color verd";
+        var frase = frase.replace("verd", "blau");
+        alert(frase);
+
+        var frase = "Tinc un cotxe de color verd";
+        var frase = frase.replace(/o/g, "u");
+        alert(frase);
+      }
+    </script>
+
+    <!--EXERCICI 7-->
+    <script>
+      function exercici7(){
+      var objectes = {"taula":0, "cadira":1, "ordinador":2, "llibreta":3};
+for (var propietat in objectes){
+    alert("L'objecte " + propietat + " està a la posició " + objectes[propietat]);
+  }
+}
+    </script>
+
+    <!--EXERCICI 8-->
+    <!--link a una altra pàgina-->
+
+  </head>
+
+  <body>
+    <header>
+      <h1>Javascript Basic</h1>
+    </header>
+    <nav class="btn">
+      <button><a href="#" onclick="alert('Hola mundo');">Exercici 1</a></button>
+      <button>
+        <a href="#" onclick="alert('El meu nom, Albert');">Exercici 2</a>
+      </button>
+      <button><a href="#" onclick="exercici3()">Exercici 3</a></button>
+      <button><a href="#" onclick="exercici4()">Exercici 4</a></button>
+      <button><a href="#" onclick="exercici5()">Exercici 5</a></button>
+      <button><a href="#" onclick="exercici6()">Exercici 6</a></button>
+      <button><a href="#" onclick="exercici7()">Exercici 7</a></button>
+      <button><a href="exercici8.html">Exercici 8</a></button>
+      
+
+  </body>
+</html>

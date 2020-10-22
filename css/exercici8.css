@@ -1,0 +1,69 @@
+/* Estils generals */
+body {
+  background: linear-gradient(90deg, #e74d6b 10%, #8cc8ac 90%);
+}
+
+h1 {
+  font-weight: bold;
+  color: white;
+  font-size: 40px;
+  margin-top: 10rem;
+  font-family: "Playfair Display", serif;
+}
+
+/* Títol */
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Calculadora */
+
+.calculadora {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 8rem 5rem;
+  color: #fff;
+}
+
+#sel_ope {
+  text-align: center;
+  background: #fff;
+  margin: 0 5px;
+  border: 1px solid #fff;
+}
+
+button {
+  width: 100px;
+}
+
+.igual {
+  padding: 0 5px;
+}
+
+@media (max-width: 768px) {
+  .calculadora {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .igual {
+    align-self: center;
+  }
+
+  button {
+    align-self: center;
+  }
+}
+
+/* Enllaç a home */
+
+.home > p > a {
+  display: flex; 
+  justify-content: center;
+  color: #fff;
+  text-decoration: none;
+}
